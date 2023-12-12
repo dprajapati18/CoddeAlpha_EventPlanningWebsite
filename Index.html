@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Event Planning</title>
+    <script src="Script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Event Planning Website</h1>
+        <div id="user-info"></div>
+    </header>
+
+    <section id="event-form">
+        <h2>Create an Event</h2>
+        <form id="eventCreationForm">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" required>
+
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" required>
+
+            <button type="button" onclick="CreateEvent();">Create Event</button>
+        </form>
+    </section>
+
+    <section id="calendar">
+        <h2>Calendar</h2>
+        <div id="eventCalendar"></div>
+    </section>
+</body>
+
+</html>
